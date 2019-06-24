@@ -8,9 +8,9 @@ import cookielib
 
 GHT = '''
 '''
-print "Gunakan Dengan Bijak"
-print "Facebook: Maestro"
-print "Thanks To Maestro"
+print "             Gunakan Dengan Bijak"
+print "             Facebook: www.facebook.com/maestro10001"
+print "             For problem chat me in my Facebook Up"
 
 
 email = str(raw_input("[*]=> Masukan ID Korban : "))
